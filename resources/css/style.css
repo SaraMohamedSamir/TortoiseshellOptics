@@ -1,0 +1,247 @@
+
+html {
+  color: White;
+  font-size: 18px;
+  line-height: 1.4rem;
+  font-family: Helvetica;
+}
+
+header {
+  background-image: url("../images/glasses-bg.png");
+  height: 30rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 1rem;
+}
+
+.banner {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 960px;
+  margin: auto;
+}
+
+.main-banner {
+  color: Black;
+  background-color: White;
+  padding: 1.5rem 5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2rem;
+  margin-top: 10rem;
+  margin-right: -2rem;
+}
+
+.container {
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: auto;
+  padding: 1rem 0;
+  font-size: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 1.5rem;
+  padding-right: 1rem;
+  padding-left: 2rem;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation .mobile-nav {
+  display: none;
+}
+
+.navigation ul li {
+  display: inline;
+  padding-right: 2rem;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: Black;
+  text-align: center;
+  margin: 3rem;
+  height: 8rem;
+  width: 5rem;
+}
+
+.service img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.service img.paper-icon {
+  width: 3.5rem;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  max-width: 960px;
+  margin: auto;
+}
+
+.product {
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 5rem;
+}
+
+.product h3 {
+  background-color: cadetblue;
+  font-weight: bold;
+  font-size: 1rem;
+  max-width: 10rem;
+  padding: 0.5rem 1.25rem;
+}
+
+.product p {
+  color: Black;
+  padding-top: 1rem;
+}
+
+.copy-rights {
+  display: flex;
+  align-items: center;
+  max-width: 960px;
+  margin: auto;
+  background-color: Azure;
+  padding: 4rem 2rem;
+}
+.copy-rights img {
+  height: 1.5rem;
+  padding-right: 1rem;
+  padding-left: 2rem;
+}
+.copy-rights span {
+  color: Black;
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    height: 22rem;
+    padding-top: 0;
+  }
+
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .banner {
+    max-width: 100%;
+  }
+
+  .main-banner {
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  .copy-rights {
+    width: 100%;
+    margin-bottom: 4rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  header {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  .logo span {
+    display: none;
+  }
+  .nav {
+    display: none;
+  }
+  .navigation .mobile-nav {
+    display: inline;
+  }
+
+  .main-banner {
+    padding: 1rem 0;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 9rem;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3.77rem 0;
+    height: 20rem;
+  }
+
+  .service {
+    margin: 0;
+    font-size: 0.77rem;
+    height: 5rem;
+  }
+
+  .service img.truck-icon {
+    margin-top: 1.54rem;
+  }
+
+  .service img.ruler-icon {
+    margin-top: 1.54rem;
+  }
+
+  .products {
+    flex-direction: column;
+  }
+
+  .product {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 4rem;
+  }
+
+  .product h3 {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .product p {
+    color: Black;
+    padding-top: 1rem;
+    font-size: 0.77rem;
+  }
+
+  .copy-rights {
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  .copy-rights span {
+    display: none;
+  }
+}
